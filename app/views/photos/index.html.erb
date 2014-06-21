@@ -1,0 +1,9 @@
+<h3>Sample data from Instagram API</h3>
+
+<!-- Just a list of usernames for popular media -->
+
+<ul class='usernames'>
+  <% @media.each do |medium| %>
+    <li class='username'><%= medium.user.username %></li>
+  <% end %>
+</ul>
